@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>youtube.com</title>
+    <link rel="shortcut icon" href="youtube-logo-png-2061.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <i class="ri-menu-line"></i>
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAq1BMVEX/////Dxz+AAD8///+/vz///v6AAD+7u3+Dx79gX/+yMv///n+0NP7Dh7/DBn8//3+3eH819j/ABL88fL/AAr++fP64uP//P/9+Pj+1dP+fHz+YWX8OT7+V1z8pKb75+X5UEv/ysX6ran9lJf/ion9bnD9Z2v+TFD+QEb8MTf9HC37urn+HCf8e4L+LzD72tH+sbT/n53+XFf6ZmDwv737d3D7iI/8XGzwfnuEX2mgAAAHJ0lEQVR4nO2cC3eiOhDHQ4IQtUkUKOCTbX20Vmvt3nt79/t/spuAWvvaJcBo7znzOz3bJyx/kkkmk8kQgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAI8v+Hacxn13Xf/kJZ3ii/vriX/po18GjW5I+ghbgnotzuAfery1rHvzCog4T8G8UuosTADm+TmQ+VS2JHZa0vKK5gx8dmynD8PiEXEZSkYehnWWzo9Xp9w2CgPwb9K01Hf3wg/7FmYOjv6enL4zjLfD8M00tICeOrm9vZfLhYjkZ39+PV6kHwiJbHKz5FkvPNdjW+v5uMlovhfLbr9OPQzVsdWgLL7ZOlvfVstDk+EY2CHGlwyiMLzKUn72GznK3j1PRD23HEFrfrMrc3nTgeDRyHc/NM3OL5T/l4HedcyMjTenY9Ai+GscS/HQVU9w6n+GgSngsSXFK5XIcsgdXitlg232gph/+8WTHF+zFvSNLtLMtHRyAl+cAbL4KAQ+hw9g3jGFvS/0ZymLEEdAb1Hz0bE6+D9No+USmclnRqNVzVQYhA3qaQDXO1DUTz3etT9DhAx08J0IjmEuUvacPj1+/10GEIJEYRtxPIpkfj34qRog+jRbdM+ouesV00wptBGU03Hkdn1aLH53EIJaZz5oZxpKBA/YylUyrOK4YLuoMSc26TcQT3HmHEuOE2OK8WPXBGdzAuAAvp2ab/gxjhUBgxXZ8KS5up2Su5GZxTBuFsdnsegKf8BzWcZuR9IKsJXD0yW3Yz3S1rdUwtxuvALGn0yGz1aDLgMqjTmGaZ5u1gwjXPNtOMWTNOXtr3UuxDBVVEmW42ZQSgm5G51TTDo0mfkf5wFcjKU60RMwMRkw5t/H8u9EJRuYytF68xgwpy6CNJAYazdGS1mOFUr3pdNyHXtz9ldQeVLnXLAIi5i6zWMvRXaALJLmFPs/s8ylZJzIQpgOVmupJWz2NapoCxznBLpfG1rMVEPxIIMeFWWvX9VzHGFVovOK2ySo3GpAsw04R2Wt6IIYrF059eBdMJhBYD0DLUrtefilEtPfUNZqs8rOvYtJCMuuq7iTGbUSTtDAV1hLDpbZJeQ3gAfg0xhsRlSbz+K4r4xk4MgBbiWzrN78UQ5SqWZtMxlRZLiVxM820T1xSju5rp++mgvaHmKXm5mUeLAZg0M89uZP3QMgfCzsiLuCNEqZHAu9bDWeP0PLtZ4isxuoX89QMVh62YP4kJYcQIq6XWV2JYkijmz6mWU6apaci6zXezxsQwkzNAnpZeUGbHCkoMt1qYfGkzB1E3pVwKGkOsZ3qe06gY7U1HJdTQGMBkcjFNdLMjCRtHlxRjoeX7t0xzYrQdrC9qM7yh0SzRo1mqRzN50dGsEQ9Aa2FKzzOeKOXPfG8xenni7zZm0iqVrgLjATTmm/nrifHNeClvBsg3M0uAOjaj8pw/kl6ZFVqRUnI5r9k3j1BDjF7PuIzFzyvr9QyAmLCmGO1eJvFu9D1WmiGtPjTnMQAWrnUPk9wqemZiAADzTM3oDHGL6Iz5lU10RrYYwKZGnbgZU9pYfgZV4mYPBCTUtK0antWT/vVuWTmiCSEmXdltg53Gmv/+Z0vLzZEfxPwgELFm987OaLQYZqYWxp5exrRYVdqLoRPtywG0zL9WYvL9GdJK2PX0RxVj2d/FWzCIzabk0U6M1w7znbPlJqizc9YmaQsgQDu3ExPc9Rm5Wmy1lKpi9nuaENmAVrvN2tiDu5fhON+drZyTzs1uM0jm+a1lUoMMLM8GfKIFKg/Atc+dk3be3EcxupvBZGhUyJ0pt2L5EukUuTMAbdP1z5oHXKiBymq6RL4Zl0D5ZiRcnTl5FjITMP1luanRgBqoHE2W7s6ccCrhsmeJ6lguz+qipzWovGai/DMbjTb/eyD7d0lol3FWH0GhzgJ02bU5pXFGeLDpA4lRSddfnPn8zGMKdH7GvKPBKjjTcQATkIrGTxBhpoOYdFovt9cCIQLnNgU9q3m+04B6KHvxoY6c5SgWD/fnNN8bTw0H+bDn9HoDfbNAtjOQ9MxTNdlsQ82RQBinc7/ToZtl9Qx6gtbAWBKuRwE9HNx98zIrK9hfWtyPa2uhfLGGtReDOXXeinej01Pnr2+1sphXVUIGlD4sbmNGEuCKACb7WymWxjfTj/UApGU9APlJPQB9x4fl801m6nLAlzc4EMb9wfp53l4sRhNTqeFh8yAsKjV4h0oNzmulhsWiPX9e3/SytAVrK5+ShmHo+362r6NxrKWRl9O4+op93Yxe7+kp//v8uqyooBGGSl2wvgkp0pRYUaFkX93E/DivZNJ9x5vqJrl9u2Yb6qS4CUkvU90kr53zm7oz6vMZ76gwT9M4rTujzL0gzjGVYS9CfagIVPbywxen17uX62cIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIglyS/wBi6Iyp7BJP2wAAAABJRU5ErkJggg==" alt="">
+                </div>
+                <h1 id="logo-txt">YouTube</h1>
+            </div>
+        </div>
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Search">
+            </form>
+            <button class="search"><i class="ri-search-line"></i></button>
+            <button class="mic"><i class="ri-mic-fill"></i></button>
+
+        </div>
+        <div class="profile-container">
+            <i class="ri-video-add-line"></i>
+            <i class="ri-grid-fill"></i>
+            <i class="ri-notification-4-line"></i>
+            <div class="profile-box">
+                <img src="https://yt3.ggpht.com/ytc/AIdro_lawf9yWTQpDKE0MLo3587nhlwH_ppxDQse0Bw_-WWV25kHUsQnoRSTBnBBFdxj69wZBg=s88-c-k-c0x00ffffff-no-rj" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="sidebar">
+            <div class="sidebar-items">
+                <a class="sidebar-item"><i class="ri-home-5-line"></i></i>Home</a>
+                <a class="sidebar-item"><i class="ri-compass-3-line"></i>Explore</a>
+                <a class="sidebar-item"><i class="ri-wireless-charging-line"></i>Shorts</a>
+                <a class="sidebar-item"><i class="ri-rss-line"></i>Subscription</a>
+                <hr>
+                <a class="sidebar-item"><i class="ri-links-line"></i>Library</a>
+                <a class="sidebar-item"><i class="ri-history-line"></i>History</a>
+                <a class="sidebar-item"><i class="ri-video-line"></i>Your videos</a>
+                <a class="sidebar-item"><i class="ri-time-line"></i>Watch later</a>
+                <a class="sidebar-item"><i class="ri-play-list-2-line"></i>All videos</a>
+                <a class="sidebar-item"><i class="ri-arrow-down-s-line"></i>Show more</a>
+                <hr>
+                <h4 class="more">More from youtube</h4>
+                <a class="sidebar-item"><i class="ri-keyboard-box-line"></i>Gaming</a>
+                <a class="sidebar-item"><i class="ri-live-line"></i>Live</a>
+                <a class="sidebar-item"><i class="ri-award-line"></i>Sports</a>
+                <hr>
+                <a class="sidebar-item"><i class="ri-settings-5-line"></i>Settings</a>
+                <a class="sidebar-item"><i class="ri-flag-line"></i>Report history</a>
+                <a class="sidebar-item"><i class="ri-question-line"></i>Help</a>
+                <a class="sidebar-item"><i class="ri-feedback-line"></i>Send feedback</a>
+
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="chips-wrapper">
+                <div class="chip">
+                    <p>All</p>
+                </div>
+                <div class="chip">
+                    <p>Music</p>
+                </div>
+                <div class="chip">
+                    <p>Sports</p>
+                </div>
+                <div class="chip">
+                    <p>Entertainment</p>
+                </div>
+                <div class="chip">
+                    <p>Movies</p>
+                </div>
+                <div class="chip">
+                    <p>Gaming</p>
+                </div>
+                <div class="chip">
+                    <p>Comedy</p>
+                </div>
+                <div class="chip">
+                    <p>Podcasts</p>
+                </div>
+                <div class="chip">
+                    <p>Recently Uploaded</p>
+                </div>
+                <div class="chip">
+                    <p>The Tonight Show Starring Jimmy Fallon</p>
+                </div>
+                <div class="chip">
+                    <p>Study related videos</p>
+                </div>
+                <div class="chip">
+                    <p>Drama related videos</p>
+                </div>
+                <div class="chip">
+                    <p>Virat Kohli</p>
+                </div>
+                <div class="chip">
+                    <p>Cricket</p>
+                </div>
+            </div>
+            <div class="video-container">
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://youtu.be/YQHsXMglC9A?si=v4t-VvCCuNP2idLD" class="video-box">
+                            <img src="https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBIoRclneT9jkp3y0V9f5zi-dhuVw" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.googleusercontent.com/YuRHl_4murHobFsrHDkpJANVHzXYTgP68zysfrsNPIRMr8fKSzEP_4y6cFeE5WfpWOdxVH4sO-8=s176-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Adele - Hello (Official Music Video)</h3>
+                                <div class="channel-name">Adele</div>
+                                <div class="views-upload">
+                                    <div class="views">3.1B views .</div>
+                                    <div class="upload">8 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=F2RnxZnubCM" class="video-box">
+                            <img src="https://i.ytimg.com/vi/F2RnxZnubCM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWqcM2ZPWe0B2WImvaAuGYPHdIFQ" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/C5ArdrNKLa6D4T39yv4GAEhPdH8pXsbVcENIATzDNljHLoILd8SDbsBb48OC06F0NgSzGdMa=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Titanic • My Heart Will Go On • Celine Dion</h3>
+                                <div class="channel-name">HD Film Tributes</div>
+                                <div class="views-upload">
+                                    <div class="views">113M views .</div>
+                                    <div class="upload">4 years ago</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://youtu.be/kJQP7kiw5Fk?si=aOPSvVVesisMBmx4" class="video-box">
+                            <img src="https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLChhqt6BsXSQcF3FCSelM_95HnXgg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/c-TEErg6GIyeUaD_BM5Xm9P1PI7lHV1XvnmGyK-Cc_fEwDUT-p3TfIsy64xtg392U2dAP11IfQ=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Luis Fonsi - Despacito ft. Daddy Yankee</h3>
+                                <div class="channel-name">Luis Fonsi</div>
+                                <div class="views-upload">
+                                    <div class="views">8.4B views .</div>
+                                    <div class="upload">7 years ago</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=pRpeEdMmmQ0" class="video-box">
+                            <img src="https://i.ytimg.com/vi/pRpeEdMmmQ0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA0LmpONgzuqkPEQNQYtiDnBNSCYA" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/4p8HQvp1CLv1HRXNbMx9mTbOGjsqg3W02jg8K41KtnptLVjts9bW_CsOuMOMXM7BFkAMXczR2w4=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Shakira - Waka Waka (This Time for Africa) (The Official 2010 FIFA World Cup™ Song)</h3>
+                                <div class="channel-name">Shakira</div>
+                                <div class="views-upload">
+                                    <div class="views">3.9B views .</div>
+                                    <div class="upload">14 years ago</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=syFZfO_wfMQ" class="video-box">
+                            <img src="https://i.ytimg.com/vi/syFZfO_wfMQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDz1LarDwJVJgORyoAq9qObNv83yA" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_lBZumWLg8HqCIAD4oHGTIIdD8DTz5eV_DgCXFu6KxNjj28=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">One Direction - Night Changes</h3>
+                                <div class="channel-name">One Direction</div>
+                                <div class="views-upload">
+                                    <div class="views">812M views .</div>
+                                    <div class="upload">9 years ago</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=YykjpeuMNEk" class="video-box">
+                            <img src="https://i.ytimg.com/vi/YykjpeuMNEk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAojx8_Yokuhhp5_eH6SqfiOVqNfQ" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/Q0t5zTKg2h9IS5NvbK4RMNCsT0Z7U9pUiRfODNJVjuBmhz7kDaPinRnCzPvgh9eWXhDqD7vK4E0=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Coldplay - Hymn For The Weekend (Official Video)</h3>
+                                <div class="channel-name">Coldplay</div>
+                                <div class="views-upload">
+                                    <div class="views">2B views .</div>
+                                    <div class="upload">8 years ago</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" class="video-box">
+                            <img src="https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDlT6L0sEzlJ81zLRYRh9Ja0fXW3g" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/emA0C_i9tUyJgxrfVpJ31e0QCU2MlovjYvQkAC9mDuSJyhl6h8PkFj5-ozRzz2vFtpbnls8s1W4=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Ed Sheeran - Shape of You (Official Music Video)</h3>
+                                <div class="channel-name">Ed Sheeran</div>
+                                <div class="views-upload">
+                                    <div class="views">6.2B views .</div>
+                                    <div class="upload">7 years ago</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=RgKAFK5djSk" class="video-box">
+                            <img src="https://i.ytimg.com/vi/RgKAFK5djSk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhwpRCeR0BhQArxzwQO_lgrLV3jQ" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/xePPODiL-MY9BLat5wrZ0jVGYtoBvsgMbsCQWBDIwHfXU8kobAJiV494Q7fRG0UPffjIxM8YFQ=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack</h3>
+                                <div class="channel-name">Wiz Khalifa</div>
+                                <div class="views-upload">
+                                    <div class="views">6.3B views .</div>
+                                    <div class="upload">9 years ago</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=_Yhyp-_hX2s&pp=ygUGZW1pbmVt" class="video-box">
+                            <img src="https://i.ytimg.com/vi/_Yhyp-_hX2s/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg-IGUoSTAP&rs=AOn4CLB1xjo6uD-difUb-hmg4yaw8EyZbg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_k3KyW_gAGs8wie3ez8Sr975S3PGJxy4fcr9Z4lZlF9Dg=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Eminem - Lose Yourself [HD]</h3>
+                                <div class="channel-name">msvogue23</div>
+                                <div class="views-upload">
+                                    <div class="views">1.3B views .</div>
+                                    <div class="upload">8 years ago</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0&list=PLyORnIW1xT6y7vyoFB1VX-fLKe7GwOF4v&index=4&pp=iAQB8AUB" class="video-box">
+                            <img src="https://i.ytimg.com/vi/OPf0YbXqDm0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAnIdK32U-YJVjx2z1UckUdsF7gwQ" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_n0cOrvmlSEli-0WQipMDMqjeAE_juxkrGhqAAf1GGbJA=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars</h3>
+                                <div class="channel-name">Mark Ronson</div>
+                                <div class="views-upload">
+                                    <div class="views">5.2B views .</div>
+                                    <div class="upload">9 years ago</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=T3E9Wjbq44E" class="video-box">
+                            <img src="https://i.ytimg.com/vi/T3E9Wjbq44E/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCRIBqBuPootdrSvcY5jbBC3yi7Eg" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/0vMWJmMVuxM66VP5Kp31nHzKnSZcVd209IIoiP091S6vyKE6vlPluLBSOb8_dyR6Bg4vNNuA4w=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">Gym Class Heroes: Stereo Hearts ft. Adam Levine [OFFICIAL VIDEO]</h3>
+                                <div class="channel-name">Fueled By Ramen</div>
+                                <div class="views-upload">
+                                    <div class="views">830M views .</div>
+                                    <div class="upload">12 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content-cover">
+                    <div class="video-content">
+                        <a href="https://www.youtube.com/watch?v=eVTXPUF4Oz4" class="video-box">
+                            <img src="https://i.ytimg.com/vi/eVTXPUF4Oz4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCt1r5qQJGoRAUL4VUsymAN_afcAA" alt="">
+                        </a>
+                        <div class="video-details">
+                            <div class="channel-logo">
+                                <img src="https://yt3.ggpht.com/ghibhu46qxFz2WJtl9qYgPASaaqb6U5WuZ0xQySouKEqamkSDTMKZZcPRqkXC833hWlS0RiYGg=s88-c-k-c0x00ffffff-no-rj" alt="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="title">In The End [Official HD Music Video] - Linkin Park</h3>
+                                <div class="channel-name">Linkin Park</div>
+                                <div class="views-upload">
+                                    <div class="views">1.7B views .</div>
+                                    <div class="upload">14 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-content">
+                            <div class="btn"><i class="ri-time-line"></i>Watch later</div>
+                            <div class="btn"><i class="ri-play-list-2-line"></i>Add to queue</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
